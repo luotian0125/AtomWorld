@@ -1,0 +1,35 @@
+{
+  "material_system": "hcp_zr_h",
+  "host_phase": "alpha_zr",
+  "name": "zhang2017_dft_htst",
+  "energy_unit": "eV",
+  "site_energies_eV": {
+    "T": 0.0,
+    "O": 0.06
+  },
+  "hops": {
+    "TT": {
+      "migration_barrier_eV": 0.129,
+      "attempt_frequency_Hz": 24249502679109.457
+    },
+    "TO": {
+      "migration_barrier_eV": 0.406,
+      "attempt_frequency_Hz": 23001851500746.227
+    },
+    "OT": {
+      "migration_barrier_eV": 0.346,
+      "attempt_frequency_Hz": 5183673584368.737
+    },
+    "OO": {
+      "migration_barrier_eV": 0.398,
+      "attempt_frequency_Hz": 4527865530349.599
+    }
+  },
+  "lattice_constants_angstrom": {
+    "a": 3.24,
+    "c": 5.18
+  },
+  "source": "Y. Zhang, C. Jiang, X.-M. Bai, Scientific Reports 7, 41033 (2017), DOI: 10.1038/srep41033. Attempt frequencies are harmonic-TST products calculated from the tabulated initial and transition-state vibrational frequencies.",
+  "publication_ready": true
+}
+

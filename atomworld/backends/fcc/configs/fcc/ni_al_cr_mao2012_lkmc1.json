@@ -1,0 +1,52 @@
+{
+  "name": "mao2012_lkmc1",
+  "material_system": "fcc_ni_al_cr",
+  "species_order": ["Ni", "Al", "Cr", "Vacancy"],
+  "energy_unit": "eV",
+  "rate_model": "broken_bond_saddle",
+  "pair_energies": [
+    [
+      [-0.7490, -0.7500, -0.7580, -0.2210],
+      [-0.7500, -0.5790, -0.6960, -0.2780],
+      [-0.7580, -0.6960, -0.6850, -0.2770],
+      [-0.2210, -0.2780, -0.2770, 0.0]
+    ],
+    [
+      [-0.0135, 0.0349, 0.0257, 0.0],
+      [0.0349, -0.0265, 0.0225, 0.0169],
+      [0.0257, 0.0225, -0.0112, 0.0199],
+      [0.0, 0.0169, 0.0199, 0.0]
+    ],
+    [
+      [0.0142, -0.0285, 0.0053, 0.0],
+      [-0.0285, 0.0084, 0.0211, -0.0335],
+      [0.0053, 0.0211, -0.0185, -0.0157],
+      [0.0, -0.0335, -0.0157, 0.0]
+    ],
+    [
+      [-0.0066, 0.0125, -0.0166, 0.0],
+      [0.0125, -0.0121, 0.0115, 0.0087],
+      [-0.0166, 0.0115, -0.0095, -0.0152],
+      [0.0, 0.0087, -0.0152, 0.0]
+    ]
+  ],
+  "saddle_point_energies": {
+    "Ni": -9.750,
+    "Al": -9.412,
+    "Cr": -9.862
+  },
+  "attempt_frequencies": {
+    "Ni": 1.10e15,
+    "Al": 1.10e15,
+    "Cr": 8.70e14
+  },
+  "reference_conditions": {
+    "temperature_K": 873,
+    "alloy_A_at_percent": {"Ni": 84.0, "Al": 7.5, "Cr": 8.5},
+    "alloy_B_at_percent": {"Ni": 80.6, "Al": 5.2, "Cr": 14.2},
+    "alloy_C_at_percent": {"Ni": 84.0, "Al": 6.5, "Cr": 9.5},
+    "explicit_vacancies": 1
+  },
+  "source": "Z. Mao et al., Acta Materialia 60 (2012) 1871-1888, doi:10.1016/j.actamat.2011.10.046; kinetic constants reproduced in A. Bombac, Atomistic Simulations of Precipitation Kinetics (2012), Table 7.1.",
+  "publication_ready": true
+}

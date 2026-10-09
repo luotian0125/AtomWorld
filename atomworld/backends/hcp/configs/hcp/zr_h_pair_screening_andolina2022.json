@@ -1,0 +1,32 @@
+{
+  "material_system": "hcp_zr_h",
+  "host_phase": "alpha_zr",
+  "name": "andolina2022_two_pair_projection_screening",
+  "energy_unit": "eV",
+  "pair_shells": [
+    {
+      "label": "TTn1_repulsive",
+      "minimum_distance_angstrom": 1.27,
+      "maximum_distance_angstrom": 1.32,
+      "source_site_type": "T",
+      "target_site_type": "T",
+      "interaction_energy_eV": 0.358
+    },
+    {
+      "label": "TTn2_attractive",
+      "minimum_distance_angstrom": 2.25,
+      "maximum_distance_angstrom": 2.30,
+      "source_site_type": "T",
+      "target_site_type": "T",
+      "interaction_energy_eV": -0.042
+    }
+  ],
+  "trap_site_energies_eV": {},
+  "provenance": {
+    "source": "C. M. Andolina et al., Computational Materials Science 209, 111384 (2022), DOI: 10.1016/j.commatsci.2022.111384",
+    "source_values": "Single-T solution energy -0.429 eV/H; TTn1 solution energy about -0.25 eV/H at about 1.30 angstrom; TTn2 is about 0.02 eV/H more stable than isolated T at 2.28 angstrom.",
+    "projection": "Pair energies are inferred as twice the per-H solution-energy difference relative to isolated T: +0.358 eV for TTn1 and -0.042 eV for TTn2.",
+    "limitations": "This two-shell pair projection omits the non-pairwise relaxation visible in the reported 3H and 4H structures and has not been fit as a converged cluster expansion."
+  },
+  "publication_ready": false
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atomworld-unified"
+version = "0.1.0"
+description = "Separated Poisson MFPT calibration for BCC, FCC and HCP AtomWorld"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE.md", "licenses/Gym-MIT.txt"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0", "scipy>=1.13", "torch>=2.1", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+training = ["gym>=0.26,<0.27", "pandas>=2.0", "tensorboardX>=2.6", "torch-geometric>=2.5,<2.8", "torch-cluster>=1.6", "tqdm>=4.66"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+atomworld-calibrate = "atomworld.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["atomworld*"]
+
+[tool.setuptools.package-data]
+"atomworld.backends.bcc" = ["configs/**/*.json", "SOURCE_LICENSE.txt"]
+"atomworld.backends.fcc" = ["configs/**/*.json"]
+"atomworld.backends.hcp" = ["configs/**/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

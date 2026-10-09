@@ -1,0 +1,8 @@
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.9
+pandas==2.3.3
+gym==0.26.2
+tensorboardX==2.6.5
+torch-geometric==2.6.1
+tqdm==4.70.1
